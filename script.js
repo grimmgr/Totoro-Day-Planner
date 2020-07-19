@@ -7,9 +7,32 @@ $(document).ready(function() {
 
     $("#currentDay").text(dateDisplay);
     
+    if (moment().format("dddd") === "Monday") {
+        $("body").css("background-image", "url(https://images8.alphacoders.com/517/517085.jpg)");
+    }
+    if (moment().format("dddd") === "Tuesday") {
+        $("body").css("background-image", "url(https://images7.alphacoders.com/517/517082.jpg)");
+    }
+    if (moment().format("dddd") === "Wednesday") {
+        $("body").css("background-image", "url(https://images7.alphacoders.com/690/690845.jpg)");
+    }
+    if (moment().format("dddd") === "Thursday") {
+        $("body").css("background-image", "url(https://images6.alphacoders.com/517/517083.jpg)");
+    }
+    if (moment().format("dddd") === "Friday") {
+        $("body").css("background-image", "url(https://images.alphacoders.com/517/517086.jpg)");
+    }
+    if (moment().format("dddd") === "Saturday") {
+        $("body").css("background-image", "url(https://images3.alphacoders.com/636/636472.jpg)");
+    }
+    if (moment().format("dddd") === "Sunday") {
+        $("body").css("background-image", "url(https://images2.alphacoders.com/914/9142.jpg)");
+    }
+
+
     function setTimeBlockColors() {
         
-        $(".time-block").each(function() {
+        $("textarea").each(function() {
 
             if ( parseInt($(this).attr("value")) < moment().toObject().hours ) {
                 $(this).removeClass("present").removeClass("future").addClass("past");
