@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Arapey&display=swap');
+
+body {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Fredericka the Great', sans-serif;
+  font-size: 16px;
+  line-height: 1;
+}
+
+.jumbotron {
+  background-color: rgba(110, 110, 110, 0.2);
+  border-radius: 0;
+  color: rgb(255, 255, 255);
+  font-family: 'Fredericka the Great', cursive;
+  text-align: center;
+}
+
+.display-3 {
+  font-size: 48px;
+}
+
+#currentDay {
+  font-size: 24px;
+}
+
+.container {
+  width: 85%;
+}
+
+.time-block{
+  border-radius: 5px;
+  text-align: center;
+}
+
+.row {
+  border-top: 1px solid white;
+  height: 60px;
+  white-space: pre-wrap;
+  
+}
+
+.hour {
+  align-content: flex-start;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-bottom-left-radius: 5px;
+  border-left: 1px solid rgb(0, 0, 0);
+  border-top: 1px solid rgb(0, 0, 0);
+  border-top-left-radius: 5px;
+  color: rgb(0, 0, 0);
+  display: flex;
+  font-size: 14px;
+  justify-content: flex-end;
+  padding: 0;
+}
+
+span {
+  padding-top: 8px;
+}
+
+.times-inline {
+  display: none;
+}
+
+.times-stacked {
+  margin-right: 3px;
+}
+
+.description{
+  font-family: 'Arapey', serif;
+  font-size: 18px;
+  white-space: pre-wrap;
+}
+
+textarea{
+  background: transparent;
+  border: none;
+  border-left: 1px solid black;
+  color: #000000;
+  font-size: 20px;
+  padding: 10px;
+  resize: none;
+}
+
+.past {
+  background-color: rgba(184, 187, 190, 0.7);
+  color: white;
+}
+
+.present {
+  background-color: rgba(192, 238, 252, 0.8);
+  border: 2px solid rgba(252, 228, 192, 0.8);
+}
+
+.future {
+  background-color: rgba(186, 223, 118, 0.8);
+}
+
+.border-bottom-dash {
+  border-bottom: 1px solid #000000;
+}
+
+.saveBtn {
+  background-color: rgba(255, 242, 183, 0.8);
+  border-bottom-left-radius: 5px;
+  border-left: 1px solid black;
+  border-top-left-radius: 5px;
+  padding: 0;
+}
+
+button i:hover {
+  font-size: 20px;
+  transition: all .3s ease-in-out;
+}
+
+.clear {
+  text-align: center;
+}
+
+.clearBtn {
+  background-color: rgba(255, 193, 193, 0.8);
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+  padding: 0;
+}
+
+.clearAllBtn {
+  background-color: rgba(207, 236, 250, 0.7);
+  border-radius: 5px;
+  height: 30px;
+  margin-bottom: 30px;
+  margin-top: 40px;
+  width: 80%;
+}
+
+@media screen and (min-width: 401px) {
+  .display-3 {
+    font-size: 60px;
+  }
+  .row {
+    height: 70px;
+  }
+}
+
+@media screen and (min-width: 493px) {
+  .display-3 {
+    font-size: 68px;
+  }
+  .row {
+    height: 80px;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .jumbotron {
+    margin-bottom: 50px;
+    padding: 40px 32px;
+  }
+  .display-3 {
+    font-size: 72px;
+  }
+  .clearAllBtn {
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 70%;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .times-stacked {
+    display: none;
+  }
+  .times-inline {
+    display: block;
+    margin-right: 3px;
+  }
+  .container {
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 1110px) {
+  .container {
+    width: 55%;
+  }
+  .clearAllBtn {
+    width: 50%;
+  }
+}
+
+
+
