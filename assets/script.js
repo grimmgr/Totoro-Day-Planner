@@ -90,7 +90,7 @@ $(document).ready(function() {
         storeEvents();
     })
  
-})
+});
 
 
 
