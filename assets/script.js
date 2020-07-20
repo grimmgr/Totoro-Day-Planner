@@ -29,7 +29,6 @@ $(document).ready(function() {
         $("body").css("background-image", "url(https://images2.alphacoders.com/914/9142.jpg)");
     }
 
-
     function setTimeBlockColors() {
         
         $("textarea").each(function() {
