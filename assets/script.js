@@ -57,12 +57,8 @@ $(document).ready(function() {
     function renderEvents() {
         $(".description").each(function () {
             let id = $(this).attr("id");
-            if (storedEvents !== null && storedEvents[id]) {
-                let text = storedEvents[id];
-                $(this).val(text);
-            }
-            
-            
+            let text = events[id];
+            $(this).val(text);
         })
     }
 
