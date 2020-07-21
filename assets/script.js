@@ -3,7 +3,12 @@ $(document).ready(function() {
     let dateDisplay = moment().format("dddd, MMMM Do");
  
     let events = {};
-    events = JSON.parse(localStorage.getItem("events"));
+    
+    let storedEvents = JSON.parse(localStorage.getItem("events"));
+    
+    if (storedEvents !== null) {
+        events = JSON.parse(localStorage.getItem("events"));
+    }
 
     $("#currentDay").text(dateDisplay);
     
@@ -53,7 +58,6 @@ $(document).ready(function() {
         $(".description").each(function () {
         
             let id = $(this).attr("id");
-            let storedEvents = JSON.parse(localStorage.getItem("events"));
             let text = storedEvents[id];
             $(this).val(text);
             
