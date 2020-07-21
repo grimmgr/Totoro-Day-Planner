@@ -58,7 +58,7 @@ $(document).ready(function() {
         $(".description").each(function () {
         
             let id = $(this).attr("id");
-            if (storedEvents[id]) {
+            if (storeEvents !== null && storedEvents[id]) {
                 let text = storedEvents[id];
                 $(this).val(text);
             }
