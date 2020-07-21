@@ -58,10 +58,11 @@ $(document).ready(function() {
         $(".description").each(function () {
         
             let id = $(this).attr("id");
-            if (storedEvents[id] !== null) {
+            if (storedEvents[id]) {
                 let text = storedEvents[id];
                 $(this).val(text);
             }
+            
             
         })
     }
